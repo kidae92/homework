@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ko">
+​
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+​
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+​
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+​
+    <title>원페이지쇼핑몰</title>
+​
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+​
+    <style>
+        * {
+            font-family: 'Dokdo', cursive;
+        }
+​
+        .myitem {
+            width: 500px;
+            height: 300px;
+​
+            background-image: url("https://www.drpdrpdrp.com/web/upload/NNEditor/20181205/[mini%20%EC%97%90%EC%BD%94%EB%B0%B1]%20AURORA%20IN%20THE%20AIR%20PINK_shop1_152142.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+​
+        .price {
+            font-size: 16px;
+        }
+​
+        .desc {
+            width: 500px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+​
+        .order-box {
+            width: 500px;
+        }
+​
+        .mybtn {
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+​
+        .wrap {
+            margin: auto;
+            width: 500px;
+        }
+    </style>
+    <script>
+        function order(){
+            alert('주문완료! 감사합니다^^');
+        }
+    </script>
+     <link href="https://fonts.googleapis.com/css2?family=Dokdo&display=swap" rel="stylesheet">
+</head>
+​
+<body>
+<div class="wrap">
+    <div class="myitem"></div>
+    <div class="desc">
+        <h1>우리 <span style="color:red">댕댕이</span>에게 이쁜 옷을 선물하세요 ★</h1>
+        <h3><span class="price">가격:10000원 + @</span></h3>
+        <p>이쁜 강아지옷을 여러가지 색상과 사이즈에 맞게 판매하고 있습니다. </p>
+    </div>
+    <div class="order-box">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주문자이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">사이즈</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>-- 사이즈를 선택하세요 --</option>
+                <option value="1">Large(+5000원)</option>
+                <option value="2">Middle(+3000원)</option>
+                <option value="3">Small(+0원)</option>
+                <option value="4">Free(+10000원)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">사이즈</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>-- 색상을 선택하세요 --</option>
+                <option value="1">Red</option>
+                <option value="2">Yellow</option>
+                <option value="3">Green</option>
+                <option value="4">Blue</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <button onclick="order()" type="button" class="btn btn-primary mybtn">주문하기</button>
+    </div>
+</div>
+</body>
+​
+</html>
